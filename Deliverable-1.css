@@ -1,0 +1,103 @@
+
+
+html { 
+  background-color: #F0ECEE;
+  width: 100%;
+  font-family: "Fira sans";
+}
+
+  
+  .item-1 ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-1 ul li {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 10px 5px 10px 5px;
+  }
+
+  .item-1 ul a {
+    text-decoration: none;
+  }
+
+  .item-1 button.css3button {
+  background-color: #FF4850;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+  .item-1 button.css3button:hover, .item-2 button.css3button:hover {
+    color: #FF4850;
+    background-color: #CCC;
+  }
+
+  a:hover {
+    color: #FF4850;
+  }
+
+  .item-2 {
+    grid-area: left;
+    height: 600px;
+  }
+
+  .item-2 button.css3button{
+  background-color: #FF4850;
+  border: none;
+  color: white;
+  width: 100%; 
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+   .item-3 {
+    grid-area: middle;
+    height: 600px;
+  }
+
+  .item-4 {
+    grid-area: right;
+    height: 600px;
+  }
+
+  @media screen and (min-width: 768px){
+    html {
+      background: url("bulldog.jpg") no-repeat center fixed;
+      background-size: cover;
+    }
+    .item-1 button.css3button {
+      width: auto;
+      }
+
+    .item-2 button.css3button {
+      width: auto;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+      
+      }
+      .item-1 ul {
+        flex-direction: row;
+        align-items: center;
+
+      }
+
+      .item-2 {
+        margin-top: 100px;
+      }
+  }
